@@ -1,0 +1,83 @@
+Cenário 1 (API): Validar Lista de contato
+DADO que estou no postman na collection contacts
+QUANDO clico em send
+ENTÃO deve retornar lista de contato
+
+Cenário 2 (API): Validar criar contato
+DADO que estou no postman na collection contacts
+QUANDO preencho body com os dados do contato
+clico em send
+ENTÃO deve ser criado um contato
+
+Cenário 3 (API): Validar edição de contato
+DADO que estou no postman na collection contacts
+QUANDO preencho body com os dados que desejo alterar do contato
+clico em send
+ENTÃO deve ser alterado o contato
+
+Cenário 4 (API): Validar edição de uma parte do contato
+DADO que estou no postman na collection contacts
+QUANDO preencho body com os dados que desejo alterar do contato
+clico em send
+ENTÃO deve ser alterado o contato
+
+Cenário 5 (API): Validar exclusão do contato
+DADO que estou no postman na collection contacts
+QUANDO clico em send
+ENTÃO deve ser excluído o contato
+
+Cenário 6 (API): Validar criação de usuário
+DADO que estou no postman na collection users
+QUANDO preencho body com os dados do usuário
+E clico em send
+ENTÃO deve ser criado o usuário
+
+Cenário 7 (API): Validar criação de usuário
+DADO que estou no postman na collection users
+QUANDO preencho body com os dados que desejo alterar do usuário
+E clico em send
+ENTÃO deve ser alterado o usuário
+
+Cenário 8 (API): Validar edição de uma parte do usuário
+DADO que estou no postman na collection users
+QUANDO preencho body com os dados que desejo alterar do usuário
+E clico em send
+ENTÃO deve ser alterado o usuário
+
+Cenário 9 (API): Validar login
+DADO que estou no postman na collection sessions
+QUANDO clico em send
+ENTÃO deve ser realizado o login
+
+Cenário 10 (API): Validar logout	
+DADO que estou no postman na collection sessions
+QUANDO clico em send
+ENTÃO deve ser realizado o logout
+
+Cenário 11 (API): Validar listagem de tarefas
+DADO que estou no postman na collection tasks
+QUANDO clico em send
+ENTÃO deve ser listado as tarefas
+
+Cenário 12 (API): Validar criação de tarefas
+DADO que estou no postman na collection tasks
+QUANDO preencho body com os dados que desejo alterar do usuário
+E clico em send
+ENTÃO deve ser criado nova tarefas
+
+Cenário 13 (API): Validar edição de tarefas
+DADO que estou no postman na collection tasks
+QUANDO preencho body com os dados que desejo alterar da tarefa
+E clico em send
+ENTÃO deve ser alterado a tarefas
+
+Cenário 14 (API): Validar edição de parte da tarefas
+DADO que estou no postman na collection tasks
+QUANDO preencho body com os dados que desejo alterar da tarefa
+E clico em send
+ENTÃO deve ser alterado a tarefas
+
+Cenário 15 (API): Validar exclusão da tarefas
+DADO que estou no postman na collection tasks
+QUANDO clico em send
+ENTÃO deve ser excluído a tarefas

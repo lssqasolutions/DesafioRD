@@ -1,0 +1,81 @@
+Cenário 1 (SITE): Validar realização de login com sucesso 
+DADO que tenho acesso ao site da drogasil
+QUANDO clico em faça seu login
+E digito e-mail/cpf
+E senha
+E clico em faça seu login 
+ENTÃO deve ser realizado o login com sucesso
+E deve respeitar tamanho, cor, fonte, ícones e imagens conforme layout
+
+Cenário 2 (SITE): Validar realização de login sem sucesso 
+DADO que tenho acesso ao site da drogasil
+QUANDO clico em faça seu login
+E digito e-mail/cpf
+E senha com dados inválido 
+E clico em faça seu login 
+ENTÃO deve ser apresentado mensagem "E-mail, CPF ou senha inválida"
+E deve respeitar tamanho, cor, fonte, ícones e imagens conforme layout
+
+Cenário 3 (SITE): Validar realização de cadastro com sucesso
+DADO que tenho acesso ao site da drogasil
+QUANDO clico em cliete novo?cadastre-se
+E preencho os campos com os dados corretamente 
+E aceito uso dos meus dados 
+ENTÃO cadastro realizado com sucesso! Acesse o seu email para validar o cadastro
+E acesso meu email 
+E ciclo em confirmar email
+E será apresentad mensagem "Seu email foi confirmado, sua conta está ativa." 
+E deve respeitar tamanho, cor, fonte, ícones e imagens conforme layout
+
+Cenário 4 (SITE): Validar realização de cadastro de cliente com dados inválidos
+DADO que tenho acesso ao site da drogasil
+QUANDO clico em cliete novo?cadastre-se
+E preencho os campos com os dados inválidos 
+ENTÃO será exibido aviso entre com nome válido
+E e-mail inválido
+E cpf inválido
+E telefone inválido 
+E data inválida
+E deve respeitar tamanho, cor, fonte, ícones e imagens conforme layout
+
+Cenário 5 (SITE): Validar realização de alteração de cadastro já existente na base
+DADO que tenho acesso ao site da drogasil
+QUANDO clico em cliete novo?cadastre-se
+E preencho os campos com os dados corretamente 
+E aceito uso dos meus dados 
+ENTÃO será exibido mensagem "O CPF já foi cadastrado em outra conta."
+E deve respeitar tamanho, cor, fonte, ícones e imagens conforme layout
+
+Cenário 6 (SITE): Validar direcionamento de link da página de categoria
+DADO que tenho acesso ao site da drogasil
+QUANDO estou na home 
+E clico na página de categoria saúde 
+ENTÃO link deve direcionar o cliente para a página de saúde
+E deve respeitar tamanho, cor, fonte, ícones e imagens conforme layout
+
+Cenário 7 (SITE): Validar ordenação de produtos na página de saúde
+DADO que tenho acesso ao site da drogasil
+QUANDO acesso a página de saúde
+E faço ordenação por menor preço
+ENTÃO os produtos devem ser exibidos na ordem de menor preço
+E deve respeitar tamanho, cor, fonte, ícones e imagens conforme layout
+
+Cenário 8 (SITE): Validar cesta
+DADO que tenho acesso ao site da drogasil 
+QUANDO insiro um produto na cesta
+E abro a cesta 
+ENTÃO deve contem o produto na cesta
+E quantidade	
+E valor unitário	
+E valor Total
+E deve respeitar tamanho, cor, fonte, ícones e imagens conforme layout
+
+Cenário 9 (SITE): Validar calculo de frente e o prazo
+DADO que tenho acesso ao site da drogasil 
+QUANDO insiro um produto na cesta
+E abro a cesta 
+E informo o cep
+E clico em ok 
+ENTÃO deve ser exibido formas de entregas (período)
+E valor do frete 
+E deve respeitar tamanho, cor, fonte, ícones e imagens conforme layout

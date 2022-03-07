@@ -1,0 +1,1526 @@
+{
+	"info": {
+		"_postman_id": "0144e26d-7678-4e47-adfa-c4ea87bfecc1",
+		"name": "Desafio DR",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Listar Contatos",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://private-anon-3d6b8b4920-apidetarefas.apiary-mock.com/contacts",
+					"protocol": "https",
+					"host": [
+						"private-anon-3d6b8b4920-apidetarefas",
+						"apiary-mock",
+						"com"
+					],
+					"path": [
+						"contacts"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Listar Contatos",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://private-anon-3d6b8b4920-apidetarefas.apiary-mock.com/contacts",
+							"protocol": "https",
+							"host": [
+								"private-anon-3d6b8b4920-apidetarefas",
+								"apiary-mock",
+								"com"
+							],
+							"path": [
+								"contacts"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "638"
+						},
+						{
+							"key": "X-Apiary-RateLimit-Limit",
+							"value": "120"
+						},
+						{
+							"key": "X-Apiary-RateLimit-Remaining",
+							"value": "119"
+						},
+						{
+							"key": "Accept",
+							"value": "application/vnd.tasksmanager.v2"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "OPTIONS,GET,HEAD,POST,PUT,DELETE,TRACE,CONNECT"
+						},
+						{
+							"key": "Access-Control-Expose-Headers",
+							"value": "Content-Type,Accept"
+						},
+						{
+							"key": "Access-Control-Max-Age",
+							"value": "10"
+						},
+						{
+							"key": "x-apiary-transaction-id",
+							"value": "6225233276a0f7007d8f6e78"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 06 Mar 2022 21:10:10 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n  \"data\": [\n    {\n      \"id\": \"1\",\n      \"type\": \"contacts\",\n      \"attributes\": {\n        \"name\": \"franco\",\n        \"last-name\": \"junior\",\n        \"email\": \"bruno123@gmail.com\",\n        \"age\": 27,\n        \"phone\": \"384379833\",\n        \"address\": \"rua tres\",\n        \"state\": \"nova\",\n        \"city\": \"melhor\"\n      }\n    },\n    {\n      \"id\": \"2\",\n      \"type\": \"contacts\",\n      \"attributes\": {\n        \"name\": \"tuane\",\n        \"last-name\": \"pera\",\n        \"email\": \"canco@gmail.com\",\n        \"age\": 66,\n        \"phone\": \"839843794\",\n        \"address\": \"rua do caico\",\n        \"state\": \"caico\",\n        \"city\": \"taipo\"\n      }\n    }\n}  "
+				}
+			]
+		},
+		{
+			"name": "Criar Contatos",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://private-anon-3d6b8b4920-apidetarefas.apiary-mock.com/contacts",
+					"protocol": "https",
+					"host": [
+						"private-anon-3d6b8b4920-apidetarefas",
+						"apiary-mock",
+						"com"
+					],
+					"path": [
+						"contacts"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Criar Contatos",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"bruno\",\r\n  \"last_name\": \"batista\",\r\n  \"email\": \"bruno@gmail.com\",\r\n  \"age\": \"28\",\r\n  \"phone\": \"21984759575\",\r\n  \"address\": \"Rua dois\",\r\n  \"state\": \"Minas Gerais\",\r\n  \"city\": \"Belo Horizonte\"\r\n}"
+						},
+						"url": {
+							"raw": "https://private-anon-3d6b8b4920-apidetarefas.apiary-mock.com/contacts",
+							"protocol": "https",
+							"host": [
+								"private-anon-3d6b8b4920-apidetarefas",
+								"apiary-mock",
+								"com"
+							],
+							"path": [
+								"contacts"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "310"
+						},
+						{
+							"key": "X-Apiary-RateLimit-Limit",
+							"value": "120"
+						},
+						{
+							"key": "X-Apiary-RateLimit-Remaining",
+							"value": "117"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "OPTIONS,GET,HEAD,POST,PUT,DELETE,TRACE,CONNECT"
+						},
+						{
+							"key": "Access-Control-Expose-Headers",
+							"value": "Content-Type"
+						},
+						{
+							"key": "Access-Control-Max-Age",
+							"value": "10"
+						},
+						{
+							"key": "x-apiary-transaction-id",
+							"value": "622524bd76a0f7007d8f73cc"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 06 Mar 2022 21:16:45 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": {\n        \"id\": \"12\",\n        \"type\": \"contacts\",\n        \"attributes\": {\n            \"name\": \"bruno\",\n            \"last-name\": \"brando\",\n            \"email\": \"bruno@gmail.com\",\n            \"age\": 28,\n            \"phone\": \"21984759575\",\n            \"address\": \"Rua dois\",\n            \"state\": \"Minas Gerais\",\n            \"city\": \"Belo Horizonte\"\n        }\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Editar Contatos",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": 1,\r\n  \"name\": \"bruno\",\r\n  \"last_name\": \"batista\",\r\n  \"email\": \"bruno@gmail.com\",\r\n  \"age\": \"28\",\r\n  \"phone\": \"21984759575\",\r\n  \"address\": \"Rua dois\",\r\n  \"state\": \"Minas Gerais\",\r\n  \"city\": \"Belo Horizonte\"\r\n}"
+				},
+				"url": {
+					"raw": "https://private-anon-3d6b8b4920-apidetarefas.apiary-mock.com/contacts",
+					"protocol": "https",
+					"host": [
+						"private-anon-3d6b8b4920-apidetarefas",
+						"apiary-mock",
+						"com"
+					],
+					"path": [
+						"contacts"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Editar Contatos",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": 1,\r\n  \"name\": \"bruno\",\r\n  \"last_name\": \"batista\",\r\n  \"email\": \"bruno@gmail.com\",\r\n  \"age\": \"28\",\r\n  \"phone\": \"21984759575\",\r\n  \"address\": \"Rua dois\",\r\n  \"state\": \"Minas Gerais\",\r\n  \"city\": \"Belo Horizonte\"\r\n}"
+						},
+						"url": {
+							"raw": "https://private-anon-3d6b8b4920-apidetarefas.apiary-mock.com/contacts",
+							"protocol": "https",
+							"host": [
+								"private-anon-3d6b8b4920-apidetarefas",
+								"apiary-mock",
+								"com"
+							],
+							"path": [
+								"contacts"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "309"
+						},
+						{
+							"key": "X-Apiary-RateLimit-Limit",
+							"value": "120"
+						},
+						{
+							"key": "X-Apiary-RateLimit-Remaining",
+							"value": "119"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "OPTIONS,GET,HEAD,POST,PUT,DELETE,TRACE,CONNECT"
+						},
+						{
+							"key": "Access-Control-Expose-Headers",
+							"value": "Content-Type"
+						},
+						{
+							"key": "Access-Control-Max-Age",
+							"value": "10"
+						},
+						{
+							"key": "x-apiary-transaction-id",
+							"value": "62252523580ecf0084c9e15f"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 06 Mar 2022 21:18:27 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": {\n        \"id\": \"1\",\n        \"type\": \"contacts\",\n        \"attributes\": {\n            \"name\": \"bruno\",\n            \"last-name\": \"brando\",\n            \"email\": \"bruno@gmail.com\",\n            \"age\": 28,\n            \"phone\": \"21984759575\",\n            \"address\": \"Rua dois\",\n            \"state\": \"Minas Gerais\",\n            \"city\": \"Belo Horizonte\"\n        }\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Editar Parte Contatos",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": 1,\r\n  \"name\": \"bruno\",\r\n  \"last_name\": \"batista\",\r\n  \"email\": \"bruno@gmail.com\",\r\n  \"age\": \"28\",\r\n  \"phone\": \"21984759575\",\r\n  \"address\": \"Rua dois\",\r\n  \"state\": \"Minas Gerais\",\r\n  \"city\": \"Belo Horizonte\"\r\n}"
+				},
+				"url": {
+					"raw": "https://private-anon-3d6b8b4920-apidetarefas.apiary-mock.com/contacts",
+					"protocol": "https",
+					"host": [
+						"private-anon-3d6b8b4920-apidetarefas",
+						"apiary-mock",
+						"com"
+					],
+					"path": [
+						"contacts"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Editar Parte Contatos",
+					"originalRequest": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": 1,\r\n  \"name\": \"bruno\",\r\n  \"last_name\": \"batista\",\r\n  \"email\": \"bruno@gmail.com\",\r\n  \"age\": \"28\",\r\n  \"phone\": \"21984759575\",\r\n  \"address\": \"Rua dois\",\r\n  \"state\": \"Minas Gerais\",\r\n  \"city\": \"Belo Horizonte\"\r\n}"
+						},
+						"url": {
+							"raw": "https://private-anon-3d6b8b4920-apidetarefas.apiary-mock.com/contacts",
+							"protocol": "https",
+							"host": [
+								"private-anon-3d6b8b4920-apidetarefas",
+								"apiary-mock",
+								"com"
+							],
+							"path": [
+								"contacts"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "309"
+						},
+						{
+							"key": "X-Apiary-RateLimit-Limit",
+							"value": "120"
+						},
+						{
+							"key": "X-Apiary-RateLimit-Remaining",
+							"value": "119"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "OPTIONS,GET,HEAD,POST,PUT,DELETE,TRACE,CONNECT"
+						},
+						{
+							"key": "Access-Control-Expose-Headers",
+							"value": "Content-Type"
+						},
+						{
+							"key": "Access-Control-Max-Age",
+							"value": "10"
+						},
+						{
+							"key": "x-apiary-transaction-id",
+							"value": "62252754a9ff280076e58e82"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 06 Mar 2022 21:27:48 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": {\n        \"id\": \"1\",\n        \"type\": \"contacts\",\n        \"attributes\": {\n            \"name\": \"bruno\",\n            \"last-name\": \"brando\",\n            \"email\": \"bruno@gmail.com\",\n            \"age\": 28,\n            \"phone\": \"21984759575\",\n            \"address\": \"Rua dois\",\n            \"state\": \"Minas Gerais\",\n            \"city\": \"Belo Horizonte\"\n        }\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Deletar  Contatos",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": 1,\r\n  \"name\": \"bruno\",\r\n  \"last_name\": \"batista\",\r\n  \"email\": \"bruno@gmail.com\",\r\n  \"age\": \"28\",\r\n  \"phone\": \"21984759575\",\r\n  \"address\": \"Rua dois\",\r\n  \"state\": \"Minas Gerais\",\r\n  \"city\": \"Belo Horizonte\"\r\n}"
+				},
+				"url": {
+					"raw": "https://private-anon-3d6b8b4920-apidetarefas.apiary-mock.com/contacts",
+					"protocol": "https",
+					"host": [
+						"private-anon-3d6b8b4920-apidetarefas",
+						"apiary-mock",
+						"com"
+					],
+					"path": [
+						"contacts"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Deletar  Contatos",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://private-anon-3d6b8b4920-apidetarefas.apiary-mock.com/contacts",
+							"protocol": "https",
+							"host": [
+								"private-anon-3d6b8b4920-apidetarefas",
+								"apiary-mock",
+								"com"
+							],
+							"path": [
+								"contacts"
+							]
+						}
+					},
+					"status": "No Content",
+					"code": 204,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "0"
+						},
+						{
+							"key": "X-Apiary-RateLimit-Limit",
+							"value": "120"
+						},
+						{
+							"key": "X-Apiary-RateLimit-Remaining",
+							"value": "119"
+						},
+						{
+							"key": "Accept",
+							"value": "application/vnd.tasksmanager.v2"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "OPTIONS,GET,HEAD,POST,PUT,DELETE,TRACE,CONNECT"
+						},
+						{
+							"key": "Access-Control-Expose-Headers",
+							"value": "Content-Type,Accept"
+						},
+						{
+							"key": "Access-Control-Max-Age",
+							"value": "10"
+						},
+						{
+							"key": "x-apiary-transaction-id",
+							"value": "622527b3cfe8350077f90542"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 06 Mar 2022 21:29:23 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "Usuários - Criar Usuário",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"user\": {\r\n    \"email\": \"brunobatista22@gmail.com\",\r\n    \"password\": \"123456\",\r\n    \"password_confirmation\": \"123456\"\r\n  }\r\n}"
+				},
+				"url": {
+					"raw": "https://private-anon-3d6b8b4920-apidetarefas.apiary-mock.com/users",
+					"protocol": "https",
+					"host": [
+						"private-anon-3d6b8b4920-apidetarefas",
+						"apiary-mock",
+						"com"
+					],
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Usuários - Criar Usuário",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"user\": {\r\n    \"email\": \"brunobatista22@gmail.com\",\r\n    \"password\": \"123456\",\r\n    \"password_confirmation\": \"123456\"\r\n  }\r\n}"
+						},
+						"url": {
+							"raw": "https://private-anon-3d6b8b4920-apidetarefas.apiary-mock.com/users",
+							"protocol": "https",
+							"host": [
+								"private-anon-3d6b8b4920-apidetarefas",
+								"apiary-mock",
+								"com"
+							],
+							"path": [
+								"users"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "266"
+						},
+						{
+							"key": "X-Apiary-RateLimit-Limit",
+							"value": "120"
+						},
+						{
+							"key": "X-Apiary-RateLimit-Remaining",
+							"value": "118"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "OPTIONS,GET,HEAD,POST,PUT,DELETE,TRACE,CONNECT"
+						},
+						{
+							"key": "Access-Control-Expose-Headers",
+							"value": "Content-Type"
+						},
+						{
+							"key": "Access-Control-Max-Age",
+							"value": "10"
+						},
+						{
+							"key": "x-apiary-transaction-id",
+							"value": "62251988e78115007fe7c0e9"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 06 Mar 2022 20:28:56 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": {\n        \"id\": \"3\",\n        \"type\": \"users\",\n        \"attributes\": {\n            \"email\": \"brunobatista22@gmail.com\",\n            \"auth-token\": \"xGAv3zLcH41eZpPsBZ66\",\n            \"created-at\": \"2018-08-18T13:38:36.663Z\",\n            \"updated-at\": \"2018-08-18T13:38:36.663Z\"\n        }\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Usuários - Editar Usuário",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"user\": {\r\n    \"email\": \"brunobatista22@gmail.com\",\r\n    \"password\": \"123456\",\r\n    \"password_confirmation\": \"123456\"\r\n  }\r\n}"
+				},
+				"url": {
+					"raw": "https://private-anon-3d6b8b4920-apidetarefas.apiary-mock.com/users",
+					"protocol": "https",
+					"host": [
+						"private-anon-3d6b8b4920-apidetarefas",
+						"apiary-mock",
+						"com"
+					],
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Usuários - Editar Usuário",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"user\": {\r\n    \"id\": \"2\"\r\n    \"email\": \"brunobatista22@gmail.com\",\r\n    \"password\": \"123456\",\r\n    \"password_confirmation\": \"123456\"\r\n  }\r\n}"
+						},
+						"url": {
+							"raw": "https://private-anon-3d6b8b4920-apidetarefas.apiary-mock.com/users",
+							"protocol": "https",
+							"host": [
+								"private-anon-3d6b8b4920-apidetarefas",
+								"apiary-mock",
+								"com"
+							],
+							"path": [
+								"users"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "266"
+						},
+						{
+							"key": "X-Apiary-RateLimit-Limit",
+							"value": "120"
+						},
+						{
+							"key": "X-Apiary-RateLimit-Remaining",
+							"value": "119"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "OPTIONS,GET,HEAD,POST,PUT,DELETE,TRACE,CONNECT"
+						},
+						{
+							"key": "Access-Control-Expose-Headers",
+							"value": "Content-Type"
+						},
+						{
+							"key": "Access-Control-Max-Age",
+							"value": "10"
+						},
+						{
+							"key": "x-apiary-transaction-id",
+							"value": "622519fb56eb60008c38bf10"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 06 Mar 2022 20:30:51 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": {\n        \"id\": \"2\",\n        \"type\": \"users\",\n        \"attributes\": {\n            \"email\": \"brunobatista22@gmail.com\",\n            \"auth-token\": \"xGAv3zLcH41eZpPsBZ66\",\n            \"created-at\": \"2018-08-18T13:38:36.663Z\",\n            \"updated-at\": \"2018-08-18T13:38:36.663Z\"\n        }\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Usuários - Editar Parte Usuário",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"user\": {\r\n    \"id\": \"2\",\r\n    \"email\": \"brunobatista22@gmail.com\",\r\n    \"password\": \"123456\",\r\n    \"password_confirmation\": \"123456\"\r\n  }\r\n}"
+				},
+				"url": {
+					"raw": "https://private-anon-3d6b8b4920-apidetarefas.apiary-mock.com/users",
+					"protocol": "https",
+					"host": [
+						"private-anon-3d6b8b4920-apidetarefas",
+						"apiary-mock",
+						"com"
+					],
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Usuários - Editar Parte Usuário",
+					"originalRequest": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"user\": {\r\n    \"id\": \"2\",\r\n    \"email\": \"brunobatista222@gmail.com\",\r\n    \"password\": \"123456\",\r\n    \"password_confirmation\": \"123456\"\r\n  }\r\n}"
+						},
+						"url": {
+							"raw": "https://private-anon-3d6b8b4920-apidetarefas.apiary-mock.com/users",
+							"protocol": "https",
+							"host": [
+								"private-anon-3d6b8b4920-apidetarefas",
+								"apiary-mock",
+								"com"
+							],
+							"path": [
+								"users"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "266"
+						},
+						{
+							"key": "X-Apiary-RateLimit-Limit",
+							"value": "120"
+						},
+						{
+							"key": "X-Apiary-RateLimit-Remaining",
+							"value": "119"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "OPTIONS,GET,HEAD,POST,PUT,DELETE,TRACE,CONNECT"
+						},
+						{
+							"key": "Access-Control-Expose-Headers",
+							"value": "Content-Type"
+						},
+						{
+							"key": "Access-Control-Max-Age",
+							"value": "10"
+						},
+						{
+							"key": "x-apiary-transaction-id",
+							"value": "62251a706e2acf00746d5202"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 06 Mar 2022 20:32:48 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": {\n        \"id\": \"2\",\n        \"type\": \"users\",\n        \"attributes\": {\n            \"email\": \"brunobatista22@gmail.com\",\n            \"auth-token\": \"xGAv3zLcH41eZpPsBZ66\",\n            \"created-at\": \"2018-08-18T13:38:36.663Z\",\n            \"updated-at\": \"2018-08-18T13:38:36.663Z\"\n        }\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Login",
+			"request": {
+				"auth": {
+					"type": "bearer"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://private-anon-3d6b8b4920-apidetarefas.apiary-mock.com/sessions",
+					"protocol": "https",
+					"host": [
+						"private-anon-3d6b8b4920-apidetarefas",
+						"apiary-mock",
+						"com"
+					],
+					"path": [
+						"sessions"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Login",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"user\": {\r\n    \"id\": \"2\",\r\n    \"email\": \"brunobatista22@gmail.com\",\r\n    \"password\": \"123456\",\r\n    \"password_confirmation\": \"123456\"\r\n  }\r\n}"
+						},
+						"url": {
+							"raw": "https://private-anon-3d6b8b4920-apidetarefas.apiary-mock.com/sessions",
+							"protocol": "https",
+							"host": [
+								"private-anon-3d6b8b4920-apidetarefas",
+								"apiary-mock",
+								"com"
+							],
+							"path": [
+								"sessions"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "88"
+						},
+						{
+							"key": "X-Apiary-RateLimit-Limit",
+							"value": "120"
+						},
+						{
+							"key": "X-Apiary-RateLimit-Remaining",
+							"value": "118"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "OPTIONS,GET,HEAD,POST,PUT,DELETE,TRACE,CONNECT"
+						},
+						{
+							"key": "Access-Control-Expose-Headers",
+							"value": "Content-Type"
+						},
+						{
+							"key": "Access-Control-Max-Age",
+							"value": "10"
+						},
+						{
+							"key": "x-apiary-transaction-id",
+							"value": "62251b3e6e2acf00746d54a4"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 06 Mar 2022 20:36:14 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"session\": {\n        \"email\": \"brunobatista66@gmail.com\",\n        \"password\": \"123456\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Logout",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"user\": {\r\n    \"id\": \"2\",\r\n    \"email\": \"brunobatista22@gmail.com\",\r\n    \"password\": \"123456\",\r\n    \"password_confirmation\": \"123456\"\r\n  }\r\n}"
+				},
+				"url": {
+					"raw": "https://private-anon-3d6b8b4920-apidetarefas.apiary-mock.com/sessions",
+					"protocol": "https",
+					"host": [
+						"private-anon-3d6b8b4920-apidetarefas",
+						"apiary-mock",
+						"com"
+					],
+					"path": [
+						"sessions"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Logout",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"user\": {\r\n    \"id\": \"2\",\r\n    \"email\": \"brunobatista22@gmail.com\",\r\n    \"password\": \"123456\",\r\n    \"password_confirmation\": \"123456\"\r\n  }\r\n}"
+						},
+						"url": {
+							"raw": "https://private-anon-3d6b8b4920-apidetarefas.apiary-mock.com/sessions",
+							"protocol": "https",
+							"host": [
+								"private-anon-3d6b8b4920-apidetarefas",
+								"apiary-mock",
+								"com"
+							],
+							"path": [
+								"sessions"
+							]
+						}
+					},
+					"status": "No Content",
+					"code": 204,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "0"
+						},
+						{
+							"key": "X-Apiary-RateLimit-Limit",
+							"value": "120"
+						},
+						{
+							"key": "X-Apiary-RateLimit-Remaining",
+							"value": "119"
+						},
+						{
+							"key": "Accept",
+							"value": "application/vnd.tasksmanager.v2"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "OPTIONS,GET,HEAD,POST,PUT,DELETE,TRACE,CONNECT"
+						},
+						{
+							"key": "Access-Control-Expose-Headers",
+							"value": "Content-Type,Accept"
+						},
+						{
+							"key": "Access-Control-Max-Age",
+							"value": "10"
+						},
+						{
+							"key": "x-apiary-transaction-id",
+							"value": "62251ebf76a0f7007d8f5697"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 06 Mar 2022 20:51:11 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "Listar Tarefas",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"user\": {\r\n    \"id\": \"2\",\r\n    \"email\": \"brunobatista22@gmail.com\",\r\n    \"password\": \"123456\",\r\n    \"password_confirmation\": \"123456\"\r\n  }\r\n}"
+				},
+				"url": {
+					"raw": "https://private-anon-3d6b8b4920-apidetarefas.apiary-mock.com/tasks",
+					"protocol": "https",
+					"host": [
+						"private-anon-3d6b8b4920-apidetarefas",
+						"apiary-mock",
+						"com"
+					],
+					"path": [
+						"tasks"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Listar Tarefas",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"user\": {\r\n    \"id\": \"2\",\r\n    \"email\": \"brunobatista22@gmail.com\",\r\n    \"password\": \"123456\",\r\n    \"password_confirmation\": \"123456\"\r\n  }\r\n}"
+						},
+						"url": {
+							"raw": "https://private-anon-3d6b8b4920-apidetarefas.apiary-mock.com/tasks",
+							"protocol": "https",
+							"host": [
+								"private-anon-3d6b8b4920-apidetarefas",
+								"apiary-mock",
+								"com"
+							],
+							"path": [
+								"tasks"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "258"
+						},
+						{
+							"key": "X-Apiary-RateLimit-Limit",
+							"value": "120"
+						},
+						{
+							"key": "X-Apiary-RateLimit-Remaining",
+							"value": "118"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "OPTIONS,GET,HEAD,POST,PUT,DELETE,TRACE,CONNECT"
+						},
+						{
+							"key": "Access-Control-Expose-Headers",
+							"value": "Content-Type"
+						},
+						{
+							"key": "Access-Control-Max-Age",
+							"value": "10"
+						},
+						{
+							"key": "x-apiary-transaction-id",
+							"value": "62251ed16e2acf00746d69a1"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 06 Mar 2022 20:51:29 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"user_id\": 12,\n    \"id\": 3,\n    \"title\": \"Tarefa 1\",\n    \"description\": \"Descrição da tarefa 2.\",\n    \"deadline\": \"2018-08-21T15:00:00.000Z\",\n    \"done\": true,\n    \"created_at\": \"2018-08-19T14:34:32.842Z\",\n    \"updated_at\": \"2018-08-19T14:49:08.877Z\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Criar Tarefas",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"user\": {\r\n    \"id\": \"2\",\r\n    \"email\": \"brunobatista22@gmail.com\",\r\n    \"password\": \"123456\",\r\n    \"password_confirmation\": \"123456\"\r\n  }\r\n}"
+				},
+				"url": {
+					"raw": "https://private-anon-3d6b8b4920-apidetarefas.apiary-mock.com/tasks",
+					"protocol": "https",
+					"host": [
+						"private-anon-3d6b8b4920-apidetarefas",
+						"apiary-mock",
+						"com"
+					],
+					"path": [
+						"tasks"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Criar Tarefas",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"task\": {\r\n    \"title\": \"Tarefa 2\",\r\n    \"description\": \"Descrição da tarefa 2.\",\r\n    \"deadline\": \"2022-03-06 15:00:00\",\r\n    \"done\": true\r\n  }\r\n}"
+						},
+						"url": {
+							"raw": "https://private-anon-3d6b8b4920-apidetarefas.apiary-mock.com/tasks",
+							"protocol": "https",
+							"host": [
+								"private-anon-3d6b8b4920-apidetarefas",
+								"apiary-mock",
+								"com"
+							],
+							"path": [
+								"tasks"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "539"
+						},
+						{
+							"key": "X-Apiary-RateLimit-Limit",
+							"value": "120"
+						},
+						{
+							"key": "X-Apiary-RateLimit-Remaining",
+							"value": "119"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "OPTIONS,GET,HEAD,POST,PUT,DELETE,TRACE,CONNECT"
+						},
+						{
+							"key": "Access-Control-Expose-Headers",
+							"value": "Content-Type"
+						},
+						{
+							"key": "Access-Control-Max-Age",
+							"value": "10"
+						},
+						{
+							"key": "x-apiary-transaction-id",
+							"value": "62251f9c2ab1b8006f5b534e"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 06 Mar 2022 20:54:52 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n  \"data\": {\n    \"id\": \"3\",\n    \"type\": \"tasks\",\n    \"attributes\": {\n      \"title\": \"Tarefa 1\",\n      \"description\": \"Descrição da tarefa 1.\",\n      \"done\": false,\n      \"deadline\": \"2018-08-21T15:00:00.000Z\",\n      \"user-id\": 12,\n      \"created-at\": \"2018-08-19T14:27:43.700Z\",\n      \"updated-at\": \"2018-08-19T14:27:43.700Z\",\n      \"short-description\": \"Descrição da tarefa 1.\",\n      \"is-late\": false\n  },\n  \"relationships\": {\n    \"user\": {\n        \"data\": {\n            \"id\": \"12\",\n            \"type\": \"users\"\n        }\n    }\n  }\n}"
+				}
+			]
+		},
+		{
+			"name": "Editar Tarefas",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"user\": {\r\n    \"id\": \"2\",\r\n    \"email\": \"brunobatista22@gmail.com\",\r\n    \"password\": \"123456\",\r\n    \"password_confirmation\": \"123456\"\r\n  }\r\n}"
+				},
+				"url": {
+					"raw": "https://private-anon-3d6b8b4920-apidetarefas.apiary-mock.com/tasks",
+					"protocol": "https",
+					"host": [
+						"private-anon-3d6b8b4920-apidetarefas",
+						"apiary-mock",
+						"com"
+					],
+					"path": [
+						"tasks"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Editar Tarefas",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"user\": {\r\n    \"id\": \"2\",\r\n    \"email\": \"brunobatista22@gmail.com\",\r\n    \"password\": \"123456\",\r\n    \"password_confirmation\": \"123456\"\r\n  }\r\n}"
+						},
+						"url": {
+							"raw": "https://private-anon-3d6b8b4920-apidetarefas.apiary-mock.com/tasks",
+							"protocol": "https",
+							"host": [
+								"private-anon-3d6b8b4920-apidetarefas",
+								"apiary-mock",
+								"com"
+							],
+							"path": [
+								"tasks"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "258"
+						},
+						{
+							"key": "X-Apiary-RateLimit-Limit",
+							"value": "120"
+						},
+						{
+							"key": "X-Apiary-RateLimit-Remaining",
+							"value": "119"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "OPTIONS,GET,HEAD,POST,PUT,DELETE,TRACE,CONNECT"
+						},
+						{
+							"key": "Access-Control-Expose-Headers",
+							"value": "Content-Type"
+						},
+						{
+							"key": "Access-Control-Max-Age",
+							"value": "10"
+						},
+						{
+							"key": "x-apiary-transaction-id",
+							"value": "6225205956f5d80072ef39f7"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 06 Mar 2022 20:58:01 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"user_id\": 12,\n    \"id\": 7,\n    \"title\": \"Tarefa 1\",\n    \"description\": \"Descrição da tarefa 2.\",\n    \"deadline\": \"2018-08-21T15:00:00.000Z\",\n    \"done\": true,\n    \"created_at\": \"2018-08-19T14:34:32.842Z\",\n    \"updated_at\": \"2018-08-19T14:49:08.877Z\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Editar uma Parte da Tarefas",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"user\": {\r\n    \"id\": \"2\",\r\n    \"email\": \"brunobatista22@gmail.com\",\r\n    \"password\": \"123456\",\r\n    \"password_confirmation\": \"123456\"\r\n  }\r\n}"
+				},
+				"url": {
+					"raw": "https://private-anon-3d6b8b4920-apidetarefas.apiary-mock.com/tasks",
+					"protocol": "https",
+					"host": [
+						"private-anon-3d6b8b4920-apidetarefas",
+						"apiary-mock",
+						"com"
+					],
+					"path": [
+						"tasks"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Editar uma Parte da Tarefas",
+					"originalRequest": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"user\": {\r\n    \"id\": \"2\",\r\n    \"email\": \"brunobatista22@gmail.com\",\r\n    \"password\": \"123456\",\r\n    \"password_confirmation\": \"123456\"\r\n  }\r\n}"
+						},
+						"url": {
+							"raw": "https://private-anon-3d6b8b4920-apidetarefas.apiary-mock.com/tasks",
+							"protocol": "https",
+							"host": [
+								"private-anon-3d6b8b4920-apidetarefas",
+								"apiary-mock",
+								"com"
+							],
+							"path": [
+								"tasks"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "258"
+						},
+						{
+							"key": "X-Apiary-RateLimit-Limit",
+							"value": "120"
+						},
+						{
+							"key": "X-Apiary-RateLimit-Remaining",
+							"value": "119"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "OPTIONS,GET,HEAD,POST,PUT,DELETE,TRACE,CONNECT"
+						},
+						{
+							"key": "Access-Control-Expose-Headers",
+							"value": "Content-Type"
+						},
+						{
+							"key": "Access-Control-Max-Age",
+							"value": "10"
+						},
+						{
+							"key": "x-apiary-transaction-id",
+							"value": "6225224b6e2acf00746d7c9a"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 06 Mar 2022 21:06:19 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"user_id\": 12,\n    \"id\": 3,\n    \"title\": \"Tarefa 1\",\n    \"description\": \"Descrição da tarefa 2.\",\n    \"deadline\": \"2018-08-21T15:00:00.000Z\",\n    \"done\": true,\n    \"created_at\": \"2018-08-19T14:34:32.842Z\",\n    \"updated_at\": \"2018-08-19T14:49:08.877Z\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Deletar Tarefas",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"user\": {\r\n    \"id\": \"2\",\r\n    \"email\": \"brunobatista22@gmail.com\",\r\n    \"password\": \"123456\",\r\n    \"password_confirmation\": \"123456\"\r\n  }\r\n}"
+				},
+				"url": {
+					"raw": "https://private-anon-3d6b8b4920-apidetarefas.apiary-mock.com/tasks",
+					"protocol": "https",
+					"host": [
+						"private-anon-3d6b8b4920-apidetarefas",
+						"apiary-mock",
+						"com"
+					],
+					"path": [
+						"tasks"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Deletar Tarefas",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"user\": {\r\n    \"id\": \"2\",\r\n    \"email\": \"brunobatista22@gmail.com\",\r\n    \"password\": \"123456\",\r\n    \"password_confirmation\": \"123456\"\r\n  }\r\n}"
+						},
+						"url": {
+							"raw": "https://private-anon-3d6b8b4920-apidetarefas.apiary-mock.com/tasks",
+							"protocol": "https",
+							"host": [
+								"private-anon-3d6b8b4920-apidetarefas",
+								"apiary-mock",
+								"com"
+							],
+							"path": [
+								"tasks"
+							]
+						}
+					},
+					"status": "No Content",
+					"code": 204,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "0"
+						},
+						{
+							"key": "X-Apiary-RateLimit-Limit",
+							"value": "120"
+						},
+						{
+							"key": "X-Apiary-RateLimit-Remaining",
+							"value": "119"
+						},
+						{
+							"key": "Accept",
+							"value": "application/vnd.tasksmanager.v2"
+						},
+						{
+							"key": "Autorization",
+							"value": "{{token}}"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "OPTIONS,GET,HEAD,POST,PUT,DELETE,TRACE,CONNECT"
+						},
+						{
+							"key": "Access-Control-Expose-Headers",
+							"value": "Content-Type,Accept,Autorization"
+						},
+						{
+							"key": "Access-Control-Max-Age",
+							"value": "10"
+						},
+						{
+							"key": "x-apiary-transaction-id",
+							"value": "622522969ea8ab0074faf258"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 06 Mar 2022 21:07:34 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": null
+				}
+			]
+		}
+	]
+}
